@@ -1,0 +1,43 @@
+
+$pill-background-color: #D8DAD3;
+
+$dark: #A4C2A5;
+
+$info: #D8DAD3;
+
+.nav-item .nav-link:not(.active){
+  background-color: $pill-background-color;
+  color: black;
+  border-radius: 25px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000000 !important;
+  color: white !important;
+  border-radius: 25px;
+}
+
+.nav-pills > li > a:hover {
+  color: #6e6e6e !important;
+}
+
+.cv:hover{
+  color: #6e6e6e !important;
+}
+
+.pillBot{
+  border-top-right-radius:30px;
+}
+.space{
+  height:535px;
+}
+
+.space2{
+  height:63px;
+}
+
+.bottom{
+  position:fixed;
+  bottom:0;
+}
+@import '~bootstrap/scss/bootstrap.scss';

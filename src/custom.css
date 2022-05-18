@@ -1,0 +1,8 @@
+.nav-pills > li > a.active {
+  background-color: #SlateGrey!important;
+  color: #SlateGrey !important;
+}
+
+.nav-pills > li > a:hover {
+  color: #SlateGrey !important;
+}
