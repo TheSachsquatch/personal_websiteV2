@@ -10,38 +10,36 @@ const Section = styled.section`
     align-items:center;
     background: white;
 `;
-const Container = styled.div`
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
-    padding: 3rem calc((100vw-1300px)/2);
 
-    @media screen and (max-width: 768px){
-        grid-grid-template-columns: 1fr;
-    }
-`;
 const Image = styled(motion.img)`
     position:absolute;
-    width:100%;
-    height:100%;
+    width:300%;
+    height:300%;
     max-width:200px;
     max-height:200px;
 `;
 const Bottom = styled.div`
     display: flex;
-    padding:3rem
+    padding:3rem;
     position:relative;
     ${Image}:nth-child(1){
-        right:200px;
+        right:500px;
+        top:10px;
     }
 
     ${Image}:nth-child(2){
-        left:200px;
+        right:200px;
+        
     }
 
     ${Image}:nth-child(3){
-        top: 300px;
-        left: 500px;
+        top:10px;
+        left:0px;
+    }
+
+    ${Image}:nth-child(4){
+        top:50px;
+        left:240px;
     }
 `;
 
@@ -52,28 +50,28 @@ const Hero = () => {
                 <Image src={Circle} alt="circle" 
                     whileTap = {{scale:0.9}}
                     drag={true}
-                    dragConstraints = {{left:250, right: 0, bottom:100, top:0}}
+                    dragConstraints = {{left:-100, right: 1000, bottom:100, top:0}}
                     initial= {{opacity:0, x:-100}}
                     animate= {{opacity: 1, x:0, transition: {duration:1}}}
                 />
                 <Image src={Circle} alt="circle" 
                     whileTap = {{scale:0.9}}
                     drag={true}
-                    dragConstraints = {{left:100, right: 250, bottom:100, top:0}}
+                    dragConstraints = {{left:-450, right: 700, bottom:100, top:0}}
                     initial= {{opacity:0, y:-100}}
                     animate= {{opacity: 1, y:0, transition: {duration:1}}}
                 />
                 <Image src={Circle} alt="circle" 
                     whileTap = {{scale:0.9}}
                     drag={true}
-                    dragConstraints = {{left:100, right: 250, bottom:100, top:0}}
+                    dragConstraints = {{left:-700, right: 500, bottom:100, top:0}}
                     initial= {{opacity:0, y:100}}
                     animate= {{opacity: 1, y:0, transition: {duration:1}}}
                 />
                 <Image src={Circle} alt="circle" 
                     whileTap = {{scale:0.9}}
                     drag={true}
-                    dragConstraints = {{left:250, right: 100, bottom:100, top:0}}
+                    dragConstraints = {{left:-850, right: 250, bottom:100, top:0}}
                     initial= {{opacity:0, x:100}}
                     animate= {{opacity: 1, x:0, transition: {duration:1}}}
                 />

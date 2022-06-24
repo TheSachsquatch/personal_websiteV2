@@ -2,7 +2,7 @@
   "name": "pweb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thesachsquatch.github.io/personal_websiteV2",
+  "homepage": "https://thesachsquatch.github.io/",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "@testing-library/jest-dom": "^5.16.4",

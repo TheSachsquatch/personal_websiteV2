@@ -1,6 +1,8 @@
 
 $pill-background-color: #D8DAD3;
 
+$secondary: rgb(161, 187, 172);
+
 $dark: #A4C2A5;
 
 $info: #D8DAD3;
@@ -30,6 +32,10 @@ $info: #D8DAD3;
 }
 .space{
   height:535px;
+}
+
+.hvr:hover{
+  color: #6b6a6a !important;
 }
 
 .space2{

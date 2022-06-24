@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {
   Navigation,
   Home,
-  Bot,
   Projects
 } from "./components";
 

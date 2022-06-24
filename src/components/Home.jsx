@@ -1,11 +1,14 @@
 import React from "react";
 import Hero from './Hero';
 import Bot from "./Bot"
+import {motion} from 'framer-motion'
+
 function Home(){
 
+  document.title = "Home";
   return(
     <div className = "home">
-      <div class = "container">
+      <motion.div class = "container" initial= {{y:-300}} animate = {{y:0}} transition = {{type: "spring", duration: 1.2}}>
         <h1 class = "display-1 mt-5">
           Hi, I'm Sachin Vijayaraj.
         </h1>
@@ -15,7 +18,7 @@ function Home(){
           In school, I'm involved with a quantitative investing club, where we're currently exploring methods of algorithmic trading.
           You can see my work on the projects tab or by visiting my github.
         </h1>
-      </div>
+      </motion.div>
       <Hero />
       <div class = "bottom">
         <Bot />
